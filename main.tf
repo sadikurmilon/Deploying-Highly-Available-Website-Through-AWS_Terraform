@@ -140,7 +140,7 @@ resource "aws_instance" "web1" {
     user_data = <<EOF
 		#! /bin/bash
         
-		echo <h1> Olu server</h1> >> /var/html/index
+		echo <h1> Sadikur server</h1> >> /var/html/index
 	EOF
     key_name = var.aws_key_name
     vpc_security_group_ids = [aws_security_group.web-sg.id]
